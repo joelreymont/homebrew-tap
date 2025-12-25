@@ -7,10 +7,9 @@ class Dot < Formula
   on_macos do
     on_arm do
       url "https://github.com/joelreymont/dots/releases/download/v0.2.0/dot-macos-arm64"
-      sha256 "d9823da3b5fd157d0c2f342c8195faaecacf0ff1926c3db983d1c50da89e8c10"
+      sha256 "3baeddb14a19c67879926c706938463b79a2aca8442e98c9af5260fc9991f152"
     end
     on_intel do
-      # Not yet available - build from source
       odie "Intel Mac binaries not available. Please build from source."
     end
   end
@@ -18,7 +17,7 @@ class Dot < Formula
   on_linux do
     on_intel do
       url "https://github.com/joelreymont/dots/releases/download/v0.2.0/dot-linux-x86_64"
-      sha256 "8cf4b79fa202759df3e8fbcb124192773a9aec82b6c004b6ae29894e9ab0cebc"
+      sha256 "32a1a2cafad7c81c8fbac7bcb35b015e58fb45a8cf8a623af290470d97772c3c"
     end
   end
 
@@ -28,10 +27,7 @@ class Dot < Formula
     elsif OS.linux? && Hardware::CPU.intel?
       "dot-linux-x86_64"
     end
-
-    if binary_name
-      bin.install binary_name => "dot"
-    end
+    bin.install binary_name => "dot" if binary_name
   end
 
   test do
