@@ -7,7 +7,7 @@ class Dots < Formula
   on_macos do
     on_arm do
       url "https://github.com/joelreymont/dots/releases/download/v0.5.0/dot-macos-arm64"
-      sha256 "46f7e70ed8a56a11e5743a85f761245aadb32e6e894b2b7fb0b33a18a99653fe"
+      sha256 "31e3ba23e5d2d8ad6a197183002eefbd9a3628c3a79568c7fcd7b0fe945935cc"
     end
     on_intel do
       odie "Intel Mac binaries not available. Please build from source."
@@ -17,7 +17,7 @@ class Dots < Formula
   on_linux do
     on_intel do
       url "https://github.com/joelreymont/dots/releases/download/v0.5.0/dot-linux-x86_64"
-      sha256 "3d25a7d067449de58001e70a908f9f9180776bf19d554c25b615efa94ec29c3c"
+      sha256 "ca5eacbf6423c29f4406984782fcf9dfc68ce86dabd7b18fcd8b07cb9022288e"
     end
   end
 
@@ -28,6 +28,17 @@ class Dots < Formula
       "dot-linux-x86_64"
     end
     bin.install binary_name => "dot" if binary_name
+  end
+
+  def caveats
+    <<~EOS
+      To migrate from beads (SQLite), download and run the migration script:
+        curl -LO https://github.com/joelreymont/dots/releases/latest/download/migrate-dots.sh
+        chmod +x migrate-dots.sh
+        ./migrate-dots.sh
+
+      Requirements: sqlite3, jq
+    EOS
   end
 
   test do
