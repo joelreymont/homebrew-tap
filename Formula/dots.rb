@@ -7,7 +7,7 @@ class Dots < Formula
   on_macos do
     on_arm do
       url "https://github.com/joelreymont/dots/releases/download/v0.5.2/dot-macos-arm64"
-      sha256 "df0c4ad973c896f12ce017c0242987d9c8c6d542baca9700851ca3e6e8cc1acd"
+      sha256 "064eb4260227b3dc3a04d7f8fce9d0ede588322c867d3c59f2e687a71025d25a"
     end
     on_intel do
       odie "Intel Mac binaries not available. Please build from source."
