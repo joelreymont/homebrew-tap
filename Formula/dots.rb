@@ -7,7 +7,7 @@ class Dots < Formula
   on_macos do
     on_arm do
       url "https://github.com/joelreymont/dots/releases/download/v0.5.3/dot-macos-arm64"
-      sha256 "4cf3233ca506f80a5028d1a7e910dadd0eb6e4b50ccfc80fb6c31d2b52825734"
+      sha256 "bdf9bc7884d678f0eed0aec49f54c2e174d2cfe49683c32ad1569d8eeab16c55"
     end
     on_intel do
       odie "Intel Mac binaries not available. Please build from source."
@@ -16,8 +16,8 @@ class Dots < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/joelreymont/dots/releases/download/v0.5.2/dot-linux-x86_64"
-      sha256 "ebc34ab4afcfa7d42a847cbb8f0d3d8d4cb7e58ded7d2da714e766b2836ade8b"
+      url "https://github.com/joelreymont/dots/releases/download/v0.5.3/dot-linux-x86_64"
+      sha256 "c151700308234757038183fa007c3f45c4fb59caae4449e2abaf1a98006c9461"
     end
   end
 
