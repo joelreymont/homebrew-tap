@@ -1,13 +1,13 @@
 class Dots < Formula
   desc "Minimal task tracker for AI agents - plain markdown files, no database"
   homepage "https://github.com/joelreymont/dots"
-  version "0.5.4"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joelreymont/dots/releases/download/v0.5.4/dot-macos-arm64"
-      sha256 "85015bb1519f146eab00355098ade07f3d3c8dc184f1f7e0bca17a407da7996c"
+      url "https://github.com/joelreymont/dots/releases/download/v0.6.0/dot-macos-arm64"
+      sha256 "e3af130d207f598c125fd922b0d075882157cb25a5f91553a3564fd5cd8dfc6e"
     end
     on_intel do
       odie "Intel Mac binaries not available. Please build from source."
@@ -16,8 +16,8 @@ class Dots < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/joelreymont/dots/releases/download/v0.5.4/dot-linux-x86_64"
-      sha256 "cc307568d5d36160c14c83cba7e22e4cc801976de9856abb9bf19105aaa95730"
+      url "https://github.com/joelreymont/dots/releases/download/v0.6.0/dot-linux-x86_64"
+      sha256 "83429cdfb85203cf2ffc1ac4e994bbd997add0704b60419ca938583612ee08b1"
     end
   end
 
