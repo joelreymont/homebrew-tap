@@ -1,7 +1,7 @@
 class Dot < Formula
   desc "Minimal task tracker for AI agents - like beads, but smaller and faster"
   homepage "https://github.com/joelreymont/dots"
-  version "0.6.3"
+  version "0.6.4"
   license "MIT"
 
   on_macos do
